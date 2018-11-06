@@ -31,9 +31,17 @@ public class TranslatorCtrl implements EventHandler<ActionEvent> {
 
 	@FXML
 	public void OnMorseClick() {
-		System.out.println(txtMorse.getText());
-		//Arbre nd = new Arbre();
-		//nd.getLetter(txtMorse.getText());
+		String res = "";
+		String morse = txtMorse.getText();
+		String t[] = morse.split("  ");
+		for (String s : t) {
+			String t2[] = s.split(" ");
+			for (String s2 : t2) {
+				res += GArbre.getLetter(s2);
+			}
+			res += " ";
+		}
+		txtLetters.setText(res);
 	}
 	
 	@FXML

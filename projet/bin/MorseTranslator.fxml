@@ -27,8 +27,8 @@
    <center>
       <Pane fx:id="pnlCenter" prefHeight="518.0" prefWidth="274.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btnToLetters" layoutX="47.0" layoutY="116.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#OnMorseClick" prefHeight="25.0" prefWidth="150.0" text="Translate to morse" textAlignment="CENTER" />
-            <Button fx:id="btnToMorse" layoutX="47.0" layoutY="195.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#OnLettersClick" prefHeight="25.0" prefWidth="150.0" text="Translate to letters" textAlignment="CENTER" />
+            <Button fx:id="btnToLetters" layoutX="47.0" layoutY="116.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#OnLettersClick" prefHeight="25.0" prefWidth="150.0" text="Translate to morse" textAlignment="CENTER" />
+            <Button fx:id="btnToMorse" layoutX="47.0" layoutY="195.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#OnMorseClick" prefHeight="25.0" prefWidth="150.0" text="Translate to letters" textAlignment="CENTER" />
             <Button fx:id="btnPlayMorse" layoutX="47.0" layoutY="274.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#OnPlayClick" prefHeight="25.0" prefWidth="150.0" text="Play" textAlignment="CENTER" />
          </children>
       </Pane>

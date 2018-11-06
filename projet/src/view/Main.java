@@ -1,8 +1,12 @@
 package view;
 
+// import packages
+import model.Arbre;
+
 import java.io.IOException;
 import java.net.URL;
 
+import controller.GArbre;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,7 +22,7 @@ public class Main extends Application{
 		// TODO Auto-generated method stub
 		parentWindow = primaryStage;
 		
-		final URL fxmlUrl = getClass().getResource("../fxml/MorseTranslator.fxml");
+		final URL fxmlUrl = getClass().getResource("/MorseTranslator.fxml");
 		final FXMLLoader fxmlLoader = new FXMLLoader(fxmlUrl);
 		final BorderPane borderpane = (BorderPane) fxmlLoader.load();
 		Scene scene = new Scene(borderpane);
@@ -29,6 +33,7 @@ public class Main extends Application{
 	}
 	
 	public static void main(String[] args) {
+		GArbre.creerArbre();
 		launch(args);
 	}
 
